@@ -20,7 +20,7 @@ public class SimpleFollow : MonoBehaviour
     {
         transform.position = Vector3.Lerp(
             transform.position,
-            target.transform.position = diff,
+            target.transform.position - diff,
             Time.deltaTime * followSpeed
         );
     }
